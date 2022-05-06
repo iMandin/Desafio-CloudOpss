@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Formulário</title>
+</head>
+
+<script type="text/javascript">
+    function abrir() {
+        document.getElementById('popup').style.display = 'block';
+
+    }
+    function fechar() {
+        document.getElementById('popup').style.display = 'none';
+    }
+
+</script>
+
+<body>
+    <!--Estrutura inicial do formulario-->
+
+    <script src="post.js"></script>
+    <form onsubmit="cadastraUsuario()">
+        <div class="container">
+            <div class="form-image">
+                <img src="assets/img//undraw_job_hunt_re_q203.svg" alt="">
+            </div>
+            <div class="form">
+                <div class="form-header">
+
+                    <!--Cabeçalho do formulario-->
+
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                </div>
+
+                    <!--Aqui adicionei todos os inputs e labels do formulario-->
+
+                <div class="input-group">
+                    <form>
+                        <div class="input-box">
+                            <label for="nome">Nome</label>
+                            <input id="nome" type="text" name="nome" placeholder="Digite seu nome" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="email">E-mail</label>
+                            <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="telefone">Telefone</label>
+                            <input id="telefone" type="tel" name="telefone" placeholder="(xx) xxxx-xxxx" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="endereco">Endereço completo</label>
+                            <input id="endereco" type="text" name="endereco" placeholder="Digite seu endereço" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="profissao">Profissão</label>
+                            <input id="profissao" type="text" name="profissao" placeholder="Sua profissão" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="curriculo">Anexe seu currículo:</label>
+                            <input id="curriculo" type="file" name="curriculo" required>
+                        </div>
+
+                        <div class="reset-button">
+                            <button type="reset"><a href="#">Limpar</a></button>
+                        </div>
+
+                        <div class="continue-button">
+                            <button id="btnClique" type="submit"><a href="#">Enviar</a> </button>
+                            <script type="text/javascript" src="index.js"></script>
+                        </div>
+                </div>
+            </div>
+    </form>
+    </div>
+    </div>
+    </div>
+    </form>
+</body>
+
+</html>
